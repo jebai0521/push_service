@@ -9,8 +9,11 @@ exports.appName = 'Push Service';
 exports.gcmServerApiKey = 'Your-server-api-key';
 
 // You may want to use your own credentials here
-exports.apnsCertData = readCredentialsFile('apns_cert_dev.pem');
-exports.apnsKeyData =readCredentialsFile('apns_key_dev.pem');
+//exports.apnsCertData = readCredentialsFile('apns_cert_dev.pem');
+//exports.apnsKeyData =readCredentialsFile('apns_key_dev.pem');
+
+exports.apnsCertData = readCredentialsFile('perkdev_dev_cert.pem');
+exports.apnsKeyData =readCredentialsFile('perkdev_dev_key.pem');
 
 
 //--- Helper functions ---

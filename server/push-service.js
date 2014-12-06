@@ -36,11 +36,11 @@ module.exports = function (app) {
     var config = require('./config');
 
     var perkdApp = {
-      id: 'perkd-app',
-      userId: 'perkd',
+      id: 'com.sencloud.perkdev',
+      userId: 'perkdev',
       name: config.appName,
 
-      description: 'Perkd',
+      description: 'Perkdev Test For Message',
       pushSettings: {
         apns: {
           certData: config.apnsCertData,
@@ -88,7 +88,7 @@ module.exports = function (app) {
       // the client settings
       Application.beforeSave = function (next) {
         if (this.name === perkdApp.name) {
-          this.id = 'perkd-app';
+          this.id = 'com.sencloud.perkdev';
         }
         next();
       };
