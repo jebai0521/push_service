@@ -1,0 +1,13 @@
+{
+  "db": {
+    "connector": "mongodb",
+    "url": "mongodb://54.255.176.102:27017/push_service"
+  },
+  "push": {
+    "name": "push",
+    "connector": "loopback-component-push",
+    "installation": "installation",
+    "notification": "notification",
+    "application": "application"
+  }
+}
