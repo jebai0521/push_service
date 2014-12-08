@@ -11,8 +11,16 @@ module.exports = function (app) {
         expirationInterval: 3600, // Expires 1 hour from now.
         badge: badge++,
         sound: 'ping.aiff',
-        alert: '\uD83D\uDCE7 \u2709 ' + 'Hello',
-        messageFrom: 'Ray'
+        alert: '\uD83D\uDCE7 \u2709 ' + 'Hello, Perkd',
+        messageFrom: 'Ray',
+        payload : {
+          type : "mail",
+          title : "Msg from push service",
+          cid : "0x98765",
+          summary : "Summary of Msg from push service",
+          url : "www.baidu.com"
+        }
+
       });
 
       PushModel.notifyById(req.params.id, note, function (err) {
