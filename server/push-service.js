@@ -15,10 +15,10 @@ module.exports = function (app) {
         messageFrom: 'Ray',
         payload : {
           type : "mail",
-          title : "Msg from push service",
-          cid : "0x98765",
-          summary : "Summary of Msg from push service",
-          url : "www.baidu.com"
+          title : "Mail1",
+          cid : "PfCUGC7",
+          summary : "Summary of message from push service, click to view Detail.",
+          url : "http://dev.sencloud.com.cn/waveo/msg/"
         }
 
       });
