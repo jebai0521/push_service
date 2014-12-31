@@ -44,8 +44,8 @@ module.exports = function (app) {
     var config = require('./config');
 
     var perkdApp = {
-      id: 'com.sencloud.perkdev',
-      userId: 'perkdev',
+      id: 'com.sencloud.push',
+      userId: 'sencloud',
       name: config.appName,
 
       description: 'Perkdev Test For Message',
@@ -96,7 +96,7 @@ module.exports = function (app) {
       // the client settings
       Application.beforeSave = function (next) {
         if (this.name === perkdApp.name) {
-          this.id = 'com.sencloud.perkdev';
+          this.id = 'com.sencloud.push';
         }
         next();
       };
