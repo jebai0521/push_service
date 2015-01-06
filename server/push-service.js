@@ -17,8 +17,8 @@ module.exports = function (app) {
           type : "mail",
           title : "Mail1",
           cid : "PfCUGC7",
-          summary : "Summary of message from push service, click to view Detail.",
-          url : "http://dev.sencloud.com.cn/waveo/msg/"
+          summary : "http://dev.sencloud.com.cn/waveo/edm/1/summary.html",
+          body : "http://dev.sencloud.com.cn/waveo/msg/index.html"
         }
 
       });
