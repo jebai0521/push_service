@@ -1,7 +1,7 @@
 {
   "name": "push",
-  "base": "Model",
   "plural": "Push",
+  "base": "Model",
   "properties": {},
   "validations": [],
   "relations": {},

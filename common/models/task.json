@@ -1,0 +1,19 @@
+{
+  "name": "task",
+  "base": "PersistedModel",
+  "properties": {
+    "app_id" : "string",
+    "notification_id" : "string",
+    "target" :[
+      "any"
+    ],
+    "status" : "string",
+    "process" : "number",
+    "created": "date",
+    "modified": "date"
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

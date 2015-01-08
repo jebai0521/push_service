@@ -12,12 +12,12 @@ exports.gcmServerApiKey = 'Your-server-api-key';
 //exports.apnsCertData = readCredentialsFile('apns_cert_dev.pem');
 //exports.apnsKeyData =readCredentialsFile('apns_key_dev.pem');
 
-//exports.apnsCertData = readCredentialsFile('perkdev_dev_cert.pem');
-//exports.apnsKeyData =readCredentialsFile('perkdev_dev_key.pem');
+exports.apnsCertData = readCredentialsFile('perkdev_dev_cert.pem');
+exports.apnsKeyData =readCredentialsFile('perkdev_dev_key.pem');
 //exports.apnsCertData = readCredentialsFile('dev_cert.pem');
 //exports.apnsKeyData =readCredentialsFile('dev_key.pem');
-exports.apnsCertData = readCredentialsFile('pro_cert.pem');
-exports.apnsKeyData =readCredentialsFile('pro_key.pem');
+//exports.apnsCertData = readCredentialsFile('pro_cert.pem');
+//exports.apnsKeyData =readCredentialsFile('pro_key.pem');
 
 //--- Helper functions ---
 

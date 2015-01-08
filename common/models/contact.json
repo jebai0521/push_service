@@ -1,0 +1,25 @@
+{
+  "name": "Contact",
+  "base": "PersistedModel",
+  "properties": {
+    "contact": {
+      "userId": "string",
+      "timezone": "string",
+      "lang": "string"
+    },
+    "deviceInfo" : {
+      "deviceType": "string",
+      "deviceToken": "string"
+    },
+    "appInfo" : {
+      "appId": "string",
+      "appVersion": "string"
+    },
+    "created": "date",
+    "modified": "date"
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
