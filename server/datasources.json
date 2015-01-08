@@ -1,7 +1,8 @@
 {
   "db": {
-    "connector": "mongodb",
-    "url": "mongodb://localhost:27017/push_service"
+    "url": "mongodb://localhost:27017/push_service",
+    "name": "db",
+    "connector": "mongodb"
   },
   "push": {
     "name": "push",

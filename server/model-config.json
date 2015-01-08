@@ -9,35 +9,39 @@
     "dataSource": "db"
   },
   "AccessToken": {
-    "public": false,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "ACL": {
-    "public": false,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "RoleMapping": {
-    "public": false,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "Role": {
-    "public": false,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "application": {
-    "public": true,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "installation": {
-    "public": true,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "notification": {
-    "public": true,
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": true
   },
   "push": {
-    "public": true,
-    "dataSource": "push"
+    "dataSource": "push",
+    "public": true
+  },
+  "task": {
+    "dataSource": "db",
+    "public": true
   }
 }

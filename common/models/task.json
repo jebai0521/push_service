@@ -1,0 +1,22 @@
+{
+  "name": "task",
+  "base": "PersistedModel",
+  "properties": {
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "notification" : {
+      "type": "string",
+      "required": true
+    },
+    "target" : {
+      "type": "array",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

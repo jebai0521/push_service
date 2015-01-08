@@ -16,9 +16,37 @@ module.exports = function (app) {
         payload : {
           type : "mail",
           title : "Mail1",
-          cid : "PfCUGC7",
+          cid : "FVaxUx3",
           summary : "http://dev.sencloud.com.cn/waveo/edm/1/summary.html",
-          body : "http://dev.sencloud.com.cn/waveo/msg/index.html"
+          url : "http://dev.sencloud.com.cn/waveo/msg/index.html"
+        }
+
+      });
+
+      PushModel.notifyById(req.params.id, note, function (err) {
+        if (err) {
+          console.error('Cannot notify %j: %s', req.params.id, err.stack);
+          next(err);
+          return;
+        }
+        console.log('pushing notification to %j', req.params.id);
+        res.send(200, 'OK');
+      });
+    });
+
+    app.post('/notify/:id/notification', function (req, res, next) {
+      var note = new Notification({
+        expirationInterval: 3600, // Expires 1 hour from now.
+        badge: badge++,
+        sound: 'ping.aiff',
+        alert: '\uD83D\uDCE7 \u2709 ' + 'Hello, Perkd',
+        messageFrom: 'Ray',
+        payload : {
+          type : "mail",
+          title : "Mail1",
+          cid : "FVaxUx3",
+          summary : "http://dev.sencloud.com.cn/waveo/edm/1/summary.html",
+          url : "http://dev.sencloud.com.cn/waveo/msg/index.html"
         }
 
       });
@@ -44,7 +72,7 @@ module.exports = function (app) {
     var config = require('./config');
 
     var perkdApp = {
-      id: 'com.sencloud.push',
+      id: 'com.sencloud.perkdev',
       userId: 'sencloud',
       name: config.appName,
 
@@ -96,7 +124,7 @@ module.exports = function (app) {
       // the client settings
       Application.beforeSave = function (next) {
         if (this.name === perkdApp.name) {
-          this.id = 'com.sencloud.push';
+          this.id = 'com.sencloud.perkdev';
         }
         next();
       };
